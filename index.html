@@ -1,0 +1,32 @@
+<!doctype html>
+
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			
+			<title>Duration Unit</title>
+			<meta name="description" content="A glorious unit of time">
+			<meta name="author" content="Peter Saathoff-Harshfield">
+			
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<div id="header-container">
+				<h1 id="du-title">Duration Unit</h1>
+			</div>
+			<p id="time-display" aria-label="the time in duration units">0:00:00</p>
+			<script src="scripts.js"></script>
+			<script>
+				setInterval(updateTime, 50);
+				function updateTime() {
+					var d = getDUTime();
+					var t = getTextDUTime(d);
+					var timeField = document.getElementById("time-display");
+					while(timeField.firstChild) {
+						timeField.removeChild(timeField.firstChild);
+					}
+					timeField.appendChild(document.createTextNode(t));
+				}
+			</script>
+		</body>
+</html>
