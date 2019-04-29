@@ -6,7 +6,7 @@ body {
 #header-container {
 	background-color: #202020;
 	margin: 0;
-	padding: 2rem;
+	padding: 3rem;
 }
 #du-title {
 	margin: 0;
@@ -15,7 +15,7 @@ body {
 	font-size: 5rem;
 }
 #time-display {
-  margin: 2rem;
+  margin: 3rem;
   text-align: center;
   color: #333;
   font-size: 8rem;
